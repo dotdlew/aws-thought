@@ -1,7 +1,7 @@
 {
   "name": "aws-thought",
   "version": "1.0.0",
-  "description": "",
+  "description": "deep-thoughts refactored for AWS cloud support",
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -18,5 +18,13 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotdlew/aws-thought.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dotdlew/aws-thought/issues"
+  },
+  "homepage": "https://github.com/dotdlew/aws-thought#readme"
 }
