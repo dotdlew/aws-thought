@@ -10,6 +10,7 @@ const storage = multer.memoryStorage({
   },
 });
 
+// image is the key!
 const upload = multer({ storage }).single("image");
 
 const s3 = new AWS.S3({

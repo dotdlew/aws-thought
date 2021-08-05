@@ -9,7 +9,6 @@ const params = (fileName) => {
     Key: `${uuidv4()}.${fileType}`,
     Body: fileName.buffer,
   };
-
   return imageParams;
 };
 
