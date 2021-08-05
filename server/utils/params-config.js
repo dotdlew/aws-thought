@@ -1,3 +1,4 @@
+const { config } = require("aws-sdk");
 const { v4: uuidv4 } = require("uuid");
 
 const params = (fileName) => {
@@ -5,9 +6,10 @@ const params = (fileName) => {
   const fileType = myFile[myFile.length - 1];
 
   const imageParams = {
-    Bucket: "user-images-24954ca2-b1a5-4663-a2b8-c6a50e390b12",
+    Bucket: config.bucket,
     Key: `${uuidv4()}.${fileType}`,
     Body: fileName.buffer,
+    ACL: "public-read", // allow read access to this file
   };
   return imageParams;
 };
