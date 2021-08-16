@@ -1,7 +1,15 @@
 # aws-thought
-deep-thoughts refactored for AWS cloud support
+AWS for JavaScript Developers
 
-# AWS EC2 Public Address
+# Description
+NodeJS social blog refactored for AWS cloud support
+
+# Author
+Daniel H. Lewis
+
+# Deployment
 http://3.236.208.106/
 
 http://ec2-3-236-208-106.compute-1.amazonaws.com
+
+Github: https://github.com/dotdlew/aws-thought
